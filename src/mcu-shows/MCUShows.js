@@ -3,8 +3,8 @@
 // 1a
 import './MCUShows.css';
 
-// 1b & 5c
-function MCUShows({dates}){
+// 1b & 5c & BONUS 6f & 7d
+function MCUShows({dates, randomChar, nextChar}){
   // 1c
   return(
     // 4a
@@ -20,6 +20,10 @@ function MCUShows({dates}){
       <p>Hawkeye: {dates.hawkeye}</p>
       <p>Moon Knight: {dates.moonKnight}</p>
       <p>Ms. Marvel: {dates.msMarvel}</p>
+      {/* BONUS 6e & 6f */}
+      <button onClick={randomChar}>RANDOM MCU CHARACTER</button>
+      {/* BONUS 7c & 7d */}
+      <button onClick={nextChar}>NEXT MCU CHARACTER</button>
     </div>
   );
 }
